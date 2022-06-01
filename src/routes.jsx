@@ -6,7 +6,6 @@ import React                                      from "react";
 import SignIn                                     from "./pages/SignIn"
 import SignUp                                     from "./pages/SignUp"
 import Template404                                from "./pages/404";
-
 import CatalogPage                                from "./pages/CatalogPage"
 
 const PrivateRoute = ({children, redirectTo})=>{

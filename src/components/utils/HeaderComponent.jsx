@@ -51,21 +51,11 @@ export default function HeaderComponent() {
   }
     return (
         <>
-            {
-                user?
-                <HeaderContainer>
-                    <HeaderBar>
-                        <a href="/"><img src={LogoHeader} /></a>
-                        <a onClick={handleLogout}>Log out</a>
-                    </HeaderBar>
-                </HeaderContainer>
-                :
-                <HeaderContainer>
-                    <HeaderBar>
-                        <a href="/"><img src={LogoHeader} /></a>
-                    </HeaderBar>
-                </HeaderContainer>
-            }
+            <HeaderContainer>
+                <HeaderBar>
+                    <a onClick={handleLogout}>Log out</a>
+                </HeaderBar>
+            </HeaderContainer>
         </>
     )
 }
