@@ -31,13 +31,11 @@ export default function CatalogPage() {
                     productList
                     ?
                     productList.map(item=>(
-                        <Link href={`/product/${item.id}`}>
                             <CardProduct key={item.id}>
                                 <ImageCardProduct src={item.image}/>
                                 <h3>{item.name}</h3>
                                 <h3>${item.price}</h3>
                             </CardProduct>
-                        </Link>
                     ))
                     :
                     "No item registered"
